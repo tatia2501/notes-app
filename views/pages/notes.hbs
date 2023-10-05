@@ -7,8 +7,21 @@
 <body>
 <main>
   {{>header}}
-  <div id="notes">
-
+  <button id="add_note_btn">+ добавить</button>
+  <p>Сохраните код, чтобы иметь доступ к своим заметкам с любого устройства.</p>
+  <div id="all_notes">
+    <div id="note_container">
+      <template id="note_template">
+        <div id="note_piece">
+          <div class="note_head">
+            <p id="note_data"></p>
+            <button id="delete_note_btn">удалить</button>
+          </div>
+          <p id="note_title"></p>
+          <p id="note_text"></p>
+        </div>
+      </template>
+    </div>
   </div>
 </main>
 </body>

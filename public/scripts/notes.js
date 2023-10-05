@@ -1,0 +1,1 @@
+const add_note_btn = document.getElementById('add_note_btn');
