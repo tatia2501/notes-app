@@ -28,7 +28,7 @@ export class NoteController {
   ): Promise<NoteReturnDto[]> {
     return this.noteService.findAll(user_id);
   }
-  @Post('user/:user_id')
+  @Post(':user_id')
   async addNote(
     @Param('user_id', ParseUUIDPipe) user_id: string,
   ): Promise<NoteReturnDto> {

@@ -23,7 +23,7 @@ export class UserController {
     return this.userService.findUserByCode(code);
   }
 
-  @Get('/user/:id')
+  @Get('/id/:id')
   async findUserById(@Param('id') id: string): Promise<UserReturnDto> {
     return this.userService.findUserById(id);
   }
