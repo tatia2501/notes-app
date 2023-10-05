@@ -35,12 +35,17 @@ export class NoteController {
     return this.noteService.addNote(user_id);
   }
   @Delete(':note_id')
-  async deleteMarker(@Param('note_id', ParseUUIDPipe) note_id: string) {
+  async deleteNote(@Param('note_id', ParseUUIDPipe) note_id: string) {
     await this.noteService.deleteNote(note_id);
   }
 
+  @Delete('/user/:user_id')
+  async deleteAllNotes(@Param('user_id', ParseUUIDPipe) user_id: string) {
+    await this.noteService.deleteAllNotes(user_id);
+  }
+
   @Put(':note_id')
-  async changeMarker(
+  async changeNote(
     @Param('note_id', ParseUUIDPipe) note_id: string,
     @Body() Note: NoteCreateDto,
   ) {
