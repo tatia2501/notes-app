@@ -12,4 +12,28 @@ export class AppController {
       title: 'Заметки',
     };
   }
+
+  @Get('/notes')
+  @Render('notes')
+  notes() {
+    return {
+      title: 'Заметки',
+    };
+  }
+
+  @Get('/view')
+  @Render('view')
+  view() {
+    return {
+      title: 'Заметки',
+    };
+  }
+
+  @Get('/edit')
+  @Render('edit')
+  edit() {
+    return {
+      title: 'Заметки',
+    };
+  }
 }
