@@ -40,4 +40,30 @@ async function getAllNotes() {
   await getUser(localStorage.getItem('notes_code'));
 }
 
+const postNote = async (user_id) => {
+  await fetch(`/note/${user_id}`, {
+    method: 'POST',
+    headers: {
+      accept: '*/*',
+    },
+  })
+    .then((response) => response.json())
+    .then(async (user) => {
+      localStorage.setItem('note_code', user.id);
+      window.location.href = '/view';
+    });
+};
+
+const getUserForPost = async (user_code) => {
+  await fetch(`/user/${user_code}`, { method: 'GET' })
+    .then((response) => response.json())
+    .then(async (user) => {
+      await postNote(user.id);
+    });
+};
+
+add_note_btn.addEventListener('click', async () => {
+  await getUserForPost(localStorage.getItem('notes_code'));
+});
+
 getAllNotes();
