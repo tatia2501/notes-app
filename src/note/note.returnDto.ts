@@ -4,11 +4,10 @@ export class NoteReturnDto {
     this.id = note.id;
     this.title = note.title;
     this.text = note.text;
+    this.date = note.date;
   }
-
   id: string;
-
   title: string;
-
   text: string;
+  date: Date;
 }
