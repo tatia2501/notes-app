@@ -27,6 +27,11 @@ const getUser = async (user_code) => {
           await deleteNote(item.id);
           window.location.reload();
         });
+        const watch_note_btn = note.getElementById('watch_note_btn');
+        watch_note_btn.addEventListener('click', async () => {
+          localStorage.setItem('note_code', item.id);
+          window.location.href = '/view';
+        });
         const title = note.getElementById('note_title');
         title.textContent = item.title;
         const text = note.getElementById('note_text');
