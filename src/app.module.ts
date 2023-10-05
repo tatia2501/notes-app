@@ -1,13 +1,12 @@
 import { HttpStatus, Module } from '@nestjs/common';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
-// import { UserModule } from './user/user.module';
+import { NoteModule } from './note/note.module';
 import { APP_FILTER, HttpAdapterHost } from '@nestjs/core';
 import { PrismaClientExceptionFilter } from 'nestjs-prisma';
 
 @Module({
-  // imports: [UserModule, MarkerModule, AnimationModule],
-  imports: [],
+  imports: [NoteModule],
   controllers: [AppController],
   providers: [
     AppService,
