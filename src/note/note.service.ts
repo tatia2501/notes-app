@@ -51,6 +51,14 @@ export class NoteService {
     });
   }
 
+  async deleteAllNotes(user_id: string) {
+    await prisma.note.deleteMany({
+      where: {
+        user_id,
+      },
+    });
+  }
+
   async changeNote(id: string, note: NoteCreateDto) {
     await prisma.note.update({
       where: {

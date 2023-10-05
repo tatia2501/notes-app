@@ -11,6 +11,15 @@ function checkCode() {
 
 checkCode();
 
+const postNote = async (user_id) => {
+  return await fetch(`/note/${user_id}`, {
+    method: 'POST',
+    headers: {
+      accept: '*/*',
+    },
+  });
+};
+
 const postUser = async () => {
   return await fetch(`/user`, {
     method: 'POST',
@@ -19,8 +28,9 @@ const postUser = async () => {
     },
   })
     .then((response) => response.json())
-    .then((user) => {
+    .then(async (user) => {
       localStorage.setItem('notes_code', user.code);
+      await postNote(user.id);
       window.location.href = '/notes';
     });
 };
