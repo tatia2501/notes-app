@@ -41,6 +41,7 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
 }
 
 /* страница авторизации */
@@ -82,39 +83,75 @@ main {
 }
 
 /* страница всех заметок */
-/*   #f1e00e  #f6eb62   */
+
 #add_note_btn {
-
+    background-color: #f59148;
+    border-color: #f26f11;
+    margin: 5px;
+    font-family: 'Balsamiq Sans', cursive;
 }
 
-#all_notes {
-
+#note_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
-/**/
+#note_piece {
+    margin: 15px;
+    background-color: #f6eb62;
+    border-color: #f1e00e;
+    height: 220px;
+    width: 300px;
+    border-radius: 10px;
+    padding: 5px;
+}
 
 #note_head {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    background-color: #f1e00e;
+    margin: 0;
+    padding: 5px;
+}
 
+#notes_comment {
+    font-family: 'Balsamiq Sans', cursive;
 }
 
 #note_date {
-
+    font-family: 'Nunito', sans-serif;
+    margin: 2px;
+    padding: 3px;
 }
 
 #watch_note_btn {
-
+    background-color: #cfc00c;
+    border-color: #a4980a;
+    font-family: 'Balsamiq Sans', cursive;
+    margin: 5px 2px 5px 5px;
 }
 
 #delete_note_btn {
-
+    background-color: #cfc00c;
+    border-color: #a4980a;
+    font-family: 'Balsamiq Sans', cursive;
+    margin: 5px 2px 5px 2px;
 }
 
 #note_title {
-
+    font-family: 'Nunito', sans-serif;
+    font-size: larger;
+    border-bottom: 1px dotted #a4980a;
 }
 
 #note_text {
-
+    font-family: 'Nunito', sans-serif;
+    font-size: medium;
 }
 
 /* страница просмотра заметки */
@@ -184,3 +221,8 @@ main {
 #save_edit_btn {
 
 }
+
+@media screen and (max-width: 600px) {}
+@media screen and (min-width: 600px)  and (max-width: 1200px) {}
+@media screen and (min-width: 1200px) and (max-width: 1800px) {}
+@media screen and (min-width: 1800px) {}
