@@ -1,0 +1,129 @@
+.header {
+/*    кнопки вверху страниц*/
+}
+
+/* страница авторизации */
+
+#login {
+
+}
+
+.login_text {
+
+}
+
+#register_btn{
+
+}
+
+#auth_input {
+
+}
+
+#auth_btn {
+
+}
+
+/* страница всех заметок */
+
+#add_note_btn {
+
+}
+
+#all_notes {
+
+}
+
+/**/
+
+#note_head {
+
+}
+
+#note_date {
+
+}
+
+#watch_note_btn {
+
+}
+
+#delete_note_btn {
+
+}
+
+#note_title {
+
+}
+
+#note_text {
+
+}
+
+/* страница просмотра заметки */
+
+#view_page {
+
+}
+
+#view_btns {
+
+}
+
+#edit_view_btn {
+
+}
+
+#delete_view_btn {
+
+}
+
+#view_note_content {
+
+}
+
+#view_title {
+
+}
+
+#view_text {
+
+}
+
+/* страница редактирования заметки */
+
+#edit_page {
+
+}
+
+#change_show_block {
+
+}
+
+#edit_change_block {
+
+}
+
+#edit_change_title {
+
+}
+
+#edit_change_text {
+
+}
+
+#edit_show_block {
+
+}
+
+#edit_show_title {
+
+}
+
+#edit_show_text {
+
+}
+
+#save_edit_btn {
+
+}

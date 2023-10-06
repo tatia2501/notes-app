@@ -7,15 +7,19 @@
 <body>
 <main>
 {{>header}}
-  <div id="edit_change_block">
-    <input id="edit_change_title" type="text" value="" placeholder="Введите название">
-    <input id="edit_change_text" type="text" value="" placeholder="Введите текст заметки">
+  <div id="edit_page">
+    <div id="change_show_block">
+      <div id="edit_change_block">
+        <input id="edit_change_title" type="text" value="" placeholder="Введите название">
+        <input id="edit_change_text" type="text" value="" placeholder="Введите текст заметки">
+      </div>
+      <div id="edit_show_block">
+        <p id="edit_show_title"></p>
+        <p id="edit_show_text"></p>
+      </div>
+    </div>
+    <button id="save_edit_btn">сохранить</button>
   </div>
-  <div id="edit_show_block">
-    <p id="edit_show_title"></p>
-    <p id="edit_show_text"></p>
-  </div>
-  <button id="save_edit_btn">сохранить</button>
 </main>
 </body>
 </html>

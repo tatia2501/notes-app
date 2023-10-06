@@ -20,7 +20,7 @@ const getUser = async (user_code) => {
       container.innerHTML = '';
       for (const item of data) {
         const note = note_template.content.cloneNode(true);
-        const date = note.getElementById('note_data');
+        const date = note.getElementById('note_date');
         date.textContent = item.date;
         const delete_note_btn = note.getElementById('delete_note_btn');
         delete_note_btn.addEventListener('click', async () => {
