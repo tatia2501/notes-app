@@ -28,4 +28,25 @@ noteEditing();
 edit_change_text.addEventListener('input', noteEditing);
 edit_change_title.addEventListener('input', noteEditing);
 
-save_edit_btn.addEventListener('click', async () => {});
+const changeNote = async (note_id, title, text) => {
+  await fetch(`/note/${note_id}`, {
+    method: 'PUT',
+    body: JSON.stringify({
+      title: title,
+      text: text,
+    }),
+    headers: {
+      accept: '*/*',
+      'Content-Type': 'application/json',
+    },
+  });
+};
+
+save_edit_btn.addEventListener('click', async () => {
+  await changeNote(
+    localStorage.getItem('note_code'),
+    edit_change_title.value,
+    edit_change_text.value,
+  );
+  window.location.href = '/view';
+});
