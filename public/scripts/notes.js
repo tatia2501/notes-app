@@ -21,7 +21,8 @@ const getUser = async (user_code) => {
       for (const item of data) {
         const note = note_template.content.cloneNode(true);
         const date = note.getElementById('note_date');
-        date.textContent = item.date;
+        const date_str = item.date.toString();
+        date.textContent = date_str.slice(0, 10) + ' ' + date_str.slice(11, 16);
         const delete_note_btn = note.getElementById('delete_note_btn');
         delete_note_btn.addEventListener('click', async () => {
           await deleteNote(item.id);
