@@ -1,31 +1,58 @@
-.header {
-/*    кнопки вверху страниц*/
+header {
+    /*display: flex;*/
+    /*align-items: center;*/
+    /*justify-content: center;*/
+    /*background: #ffffff;*/
+    /*height: 80px;*/
+    /*width: 100%;*/
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 /* страница авторизации */
 
 #login {
-
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #fbcfae;
+    font-family: 'Balsamiq Sans', cursive;
+    width: 400px;
+    margin-top: 50px;
 }
 
 .login_text {
-
+    margin: 7px;
+    font-size: large;
 }
 
 #register_btn{
-
+    background-color: #f59148;
+    border-color: #f26f11;
+    margin: 5px;
+    font-family: 'Balsamiq Sans', cursive;
 }
 
 #auth_input {
-
+    border-color: #f26f11;
+    margin: 5px;
+    font-family: 'Balsamiq Sans', cursive;
 }
 
 #auth_btn {
-
+    background-color: #f59148;
+    border-color: #f26f11;
+    margin: 5px;
+    font-family: 'Balsamiq Sans', cursive;
 }
 
 /* страница всех заметок */
-
+/*   #f1e00e  #f6eb62   */
 #add_note_btn {
 
 }
