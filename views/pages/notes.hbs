@@ -5,16 +5,16 @@
   <script type="module" src="scripts/notes.js"></script>
 </head>
 <body>
+{{>header}}
+<p id="notes_comment">Сохраните код, чтобы иметь доступ к своим заметкам с любого устройства.</p>
+<button id="add_note_btn">+ добавить</button>
 <main>
-  {{>header}}
-  <button id="add_note_btn">+ добавить</button>
-  <p>Сохраните код, чтобы иметь доступ к своим заметкам с любого устройства.</p>
   <div id="all_notes">
     <div id="note_container">
       <template id="note_template">
         <div id="note_piece">
-          <div class="note_head">
-            <p id="note_data"></p>
+          <div id="note_head">
+            <p id="note_date"></p>
             <button id="watch_note_btn">посмотреть</button>
             <button id="delete_note_btn">удалить</button>
           </div>

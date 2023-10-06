@@ -29,7 +29,10 @@ const getUser = async (user_code) => {
     });
 };
 delete_account_btn.addEventListener('click', async () => {
-  await getUser(localStorage.getItem('notes_code'));
-  localStorage.removeItem('notes_code');
-  window.location.href = '/';
+  const answer = window.confirm('Вы хотите удалить все заметки?');
+  if (answer) {
+    await getUser(localStorage.getItem('notes_code'));
+    localStorage.removeItem('notes_code');
+    window.location.href = '/';
+  }
 });

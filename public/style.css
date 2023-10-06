@@ -1,0 +1,285 @@
+/* header */
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    height: 80px;
+    width: 100%;
+    background-color: #fbcfae;
+}
+
+#init_page_btn {
+    background-color: #f59148;
+    border-color: #f26f11;
+    margin: 5px;
+    font-family: 'Balsamiq Sans', cursive;
+}
+
+#copy_code_btn {
+    background-color: #f59148;
+    border-color: #f26f11;
+    margin: 5px;
+    font-family: 'Balsamiq Sans', cursive;
+}
+
+#logout_btn {
+    background-color: #f59148;
+    border-color: #f26f11;
+    margin: 5px;
+    font-family: 'Balsamiq Sans', cursive;
+}
+
+#delete_account_btn {
+    background-color: #f59148;
+    border-color: #f26f11;
+    margin: 5px;
+    font-family: 'Balsamiq Sans', cursive;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+/* страница авторизации */
+
+#login {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #fbcfae;
+    font-family: 'Balsamiq Sans', cursive;
+    width: 400px;
+    margin-top: 50px;
+}
+
+.login_text {
+    margin: 7px;
+    font-size: large;
+}
+
+#register_btn{
+    background-color: #f59148;
+    border-color: #f26f11;
+    margin: 5px;
+    font-family: 'Balsamiq Sans', cursive;
+}
+
+#auth_input {
+    border-color: #f26f11;
+    margin: 5px;
+    font-family: 'Balsamiq Sans', cursive;
+}
+
+#auth_btn {
+    background-color: #f59148;
+    border-color: #f26f11;
+    margin: 5px;
+    font-family: 'Balsamiq Sans', cursive;
+}
+
+/* страница всех заметок */
+
+#add_note_btn {
+    background-color: #f59148;
+    border-color: #f26f11;
+    margin: 5px;
+    font-family: 'Balsamiq Sans', cursive;
+}
+
+#note_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#note_piece {
+    margin: 15px;
+    background-color: #f6eb62;
+    border-color: #f1e00e;
+    height: 220px;
+    width: 300px;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+#note_head {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    background-color: #f1e00e;
+    margin: 0;
+    padding: 5px;
+}
+
+#notes_comment {
+    font-family: 'Balsamiq Sans', cursive;
+}
+
+#note_date {
+    font-family: 'Nunito', sans-serif;
+    margin: 2px;
+    padding: 3px;
+}
+
+#watch_note_btn {
+    background-color: #cfc00c;
+    border-color: #a4980a;
+    font-family: 'Balsamiq Sans', cursive;
+    margin: 5px 2px 5px 5px;
+}
+
+#delete_note_btn {
+    background-color: #cfc00c;
+    border-color: #a4980a;
+    font-family: 'Balsamiq Sans', cursive;
+    margin: 5px 2px 5px 2px;
+}
+
+#note_title {
+    font-family: 'Nunito', sans-serif;
+    font-size: larger;
+    border-bottom: 1px dotted #a4980a;
+}
+
+#note_text {
+    font-family: 'Nunito', sans-serif;
+    font-size: medium;
+}
+
+/* страница просмотра заметки */
+
+#view_page {
+    width: 100%;
+}
+
+#return_view_bt {
+    background-color: #f1e00e;
+    border-color: #cfc00c;
+    font-family: 'Balsamiq Sans', cursive;
+    margin: 5px 2px 5px 2px;
+}
+
+#edit_view_btn {
+    background-color: #f1e00e;
+    border-color: #cfc00c;
+    font-family: 'Balsamiq Sans', cursive;
+    margin: 5px 2px 5px 2px;
+}
+
+#delete_view_btn {
+    background-color: #f1e00e;
+    border-color: #cfc00c;
+    font-family: 'Balsamiq Sans', cursive;
+    margin: 5px 2px 5px 2px;
+}
+
+#view_note_content {
+    display: flex;
+    flex-direction: column;
+    background-color: #f1e00e;
+    border-color: #cfc00c;
+    min-height: 500px;
+    width: 90%;
+}
+
+#view_title {
+    margin: 20px;
+    padding-bottom: 20px;
+    font-family: 'Nunito', sans-serif;
+    font-size: larger;
+    border-bottom: 2px dotted #cfc00c;
+}
+
+#view_text {
+    margin: 20px;
+    font-family: 'Nunito', sans-serif;
+    font-size: medium;
+}
+
+/* страница редактирования заметки */
+
+#edit_page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+#change_show_block {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    width: 100%;
+    margin: 20px;
+}
+
+#edit_change_block {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 95%;
+    margin: 5px;
+}
+
+#edit_change_title {
+    background-color: #f1e00e;
+    font-family: 'Nunito', sans-serif;
+    min-height: 50px;
+    width: 95%;
+    border-color: #cfc00c;
+    margin: 5px;
+}
+
+#edit_change_text {
+    background-color: #f1e00e;
+    font-family: 'Nunito', sans-serif;
+    min-height: 300px;
+    width: 95%;
+    border-color: #cfc00c;
+    margin: 5px;
+}
+
+#edit_show_block {
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    flex-direction: column;
+    background-color: #f1e00e;
+    width: 95%;
+    min-height: 400px;
+    margin: 5px;
+}
+
+#edit_show_title {
+    background-color: #f1e00e;
+    font-family: 'Nunito', sans-serif;
+    font-size: larger;
+    margin: 10px;
+    width: 95%;
+    padding-bottom: 10px;
+    border-bottom: 2px dotted #cfc00c;
+}
+
+#edit_show_text {
+    background-color: #f1e00e;
+    font-family: 'Nunito', sans-serif;
+    font-size: medium;
+    margin: 10px;
+}
+
+#save_edit_btn {
+    background-color: #f1e00e;
+    font-family: 'Balsamiq Sans', cursive;
+    font-size: large;
+}

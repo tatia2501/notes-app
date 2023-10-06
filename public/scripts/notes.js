@@ -20,8 +20,9 @@ const getUser = async (user_code) => {
       container.innerHTML = '';
       for (const item of data) {
         const note = note_template.content.cloneNode(true);
-        const date = note.getElementById('note_data');
-        date.textContent = item.date;
+        const date = note.getElementById('note_date');
+        const date_str = item.date.toString();
+        date.textContent = date_str.slice(0, 10) + ' ' + date_str.slice(11, 16);
         const delete_note_btn = note.getElementById('delete_note_btn');
         delete_note_btn.addEventListener('click', async () => {
           await deleteNote(item.id);
@@ -55,7 +56,7 @@ const postNote = async (user_id) => {
     .then((response) => response.json())
     .then(async (user) => {
       localStorage.setItem('note_code', user.id);
-      window.location.href = '/view';
+      window.location.href = '/edit';
     });
 };
 
