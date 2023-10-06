@@ -56,7 +56,7 @@ const postNote = async (user_id) => {
     .then((response) => response.json())
     .then(async (user) => {
       localStorage.setItem('note_code', user.id);
-      window.location.href = '/view';
+      window.location.href = '/edit';
     });
 };
 

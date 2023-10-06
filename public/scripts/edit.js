@@ -43,10 +43,16 @@ const changeNote = async (note_id, title, text) => {
 };
 
 save_edit_btn.addEventListener('click', async () => {
-  await changeNote(
-    localStorage.getItem('note_code'),
-    edit_change_title.value,
-    edit_change_text.value,
-  );
-  window.location.href = '/view';
+  if (edit_change_title.value === '') {
+    alert('Заметка должна иметь название');
+  } else if (edit_change_text.value === '') {
+    alert('Напишите что-нибудь в тело заметки');
+  } else {
+    await changeNote(
+      localStorage.getItem('note_code'),
+      edit_change_title.value,
+      edit_change_text.value,
+    );
+    window.location.href = '/view';
+  }
 });

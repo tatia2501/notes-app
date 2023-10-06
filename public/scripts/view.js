@@ -2,6 +2,7 @@ const edit_view_btn = document.getElementById('edit_view_btn');
 const delete_view_btn = document.getElementById('delete_view_btn');
 const view_title = document.getElementById('view_title');
 const view_text = document.getElementById('view_text');
+const return_view_bt = document.getElementById('return_view_bt');
 
 edit_view_btn.addEventListener('click', async () => {
   window.location.href = '/edit';
@@ -29,5 +30,9 @@ const getNote = async (note_id) => {
 async function getNoteInfo() {
   await getNote(localStorage.getItem('note_code'));
 }
+
+return_view_bt.addEventListener('click', async () => {
+  window.location.href = '/notes';
+});
 
 getNoteInfo();

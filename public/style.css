@@ -160,8 +160,11 @@ main {
     width: 100%;
 }
 
-#view_btns {
-
+#return_view_bt {
+    background-color: #f1e00e;
+    border-color: #cfc00c;
+    font-family: 'Balsamiq Sans', cursive;
+    margin: 5px 2px 5px 2px;
 }
 
 #edit_view_btn {
@@ -280,8 +283,3 @@ main {
     font-family: 'Balsamiq Sans', cursive;
     font-size: large;
 }
-
-@media screen and (max-width: 600px) {}
-@media screen and (min-width: 600px)  and (max-width: 1200px) {}
-@media screen and (min-width: 1200px) and (max-width: 1800px) {}
-@media screen and (min-width: 1800px) {}
