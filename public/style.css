@@ -157,7 +157,7 @@ main {
 /* страница просмотра заметки */
 
 #view_page {
-
+    width: 100%;
 }
 
 #view_btns {
@@ -165,23 +165,40 @@ main {
 }
 
 #edit_view_btn {
-
+    background-color: #f1e00e;
+    border-color: #cfc00c;
+    font-family: 'Balsamiq Sans', cursive;
+    margin: 5px 2px 5px 2px;
 }
 
 #delete_view_btn {
-
+    background-color: #f1e00e;
+    border-color: #cfc00c;
+    font-family: 'Balsamiq Sans', cursive;
+    margin: 5px 2px 5px 2px;
 }
 
 #view_note_content {
-
+    display: flex;
+    flex-direction: column;
+    background-color: #f1e00e;
+    border-color: #cfc00c;
+    min-height: 500px;
+    width: 90%;
 }
 
 #view_title {
-
+    margin: 20px;
+    padding-bottom: 20px;
+    font-family: 'Nunito', sans-serif;
+    font-size: larger;
+    border-bottom: 2px dotted #cfc00c;
 }
 
 #view_text {
-
+    margin: 20px;
+    font-family: 'Nunito', sans-serif;
+    font-size: medium;
 }
 
 /* страница редактирования заметки */
